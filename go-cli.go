@@ -158,7 +158,7 @@ func brewCoffee(sugar int, milk string, strength int) {
 func askCoffeeOptions() (int, string, int, bool) {
 	sugar := 0
 	milk := "no"
-	strength := 0 // Added variable to store coffee strength
+	strength := 0 // variable to store coffee strength
 
 	fmt.Println("How many sugars would you like? (0, 1, 2 or 3)")
 	scanner := bufio.NewScanner(os.Stdin)
@@ -232,7 +232,6 @@ func askCoffeeOptions() (int, string, int, bool) {
 }
 
 func capitalsQuizF() {
-
 	// Prompt user for number of questions (default 10)
 	var numQuestions int
 	for {
@@ -246,6 +245,7 @@ func capitalsQuizF() {
 		} else if numQuestions < 1 || numQuestions > len(countryCapitals) {
 			// Handle invalid input (non-numeric or out-of-range):
 			fmt.Printf("Invalid input. Please enter a number between 1 and %d.\n", len(countryCapitals))
+			numQuestions = 0 // Reset numQuestions to handle empty input correctly
 		} else {
 			// Handle valid input:
 			break // Exit the loop to proceed with the quiz
@@ -333,7 +333,7 @@ func main() {
 				continue
 			}
 
-			// Use the retrieved strength to potentially alter coffee preparation logic here
+			// TODO: Use the retrieved strength to potentially alter coffee preparation logic here
 
 			brewCoffee(sugar, milk, strength)
 
