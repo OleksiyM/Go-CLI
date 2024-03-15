@@ -1,0 +1,1 @@
+go.exe build -ldflags="-s -w" go-cli.go 
