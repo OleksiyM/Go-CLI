@@ -46,7 +46,7 @@ This project provides a command-line interface (CLI) application with various fu
 
 **Using Pre-Built Binaries:**
 
-If you don't want to build from source, you can download pre-built binaries for your operating system from the project's Releases section (___here___). Once downloaded, make the binary executable (if necessary) and place it in a directory accessible from your system's PATH environment variable.
+If you don't want to build from source, you can download pre-built binaries for your operating system from the project's [Releases](https://github.com/OleksiyM/Go-CLI/releases) section . Once downloaded, make the binary executable (if necessary) and place it in a directory accessible from your system's PATH environment variable.
 
 ## Usage
 

@@ -236,22 +236,19 @@ func capitalsQuizF() {
 	// Prompt user for number of questions (default 10)
 	var numQuestions int
 	for {
-
 		fmt.Println("How many countries would you like to be tested on? (default 10)")
 		fmt.Scanf("%d\n", &numQuestions)
 
+		// Handle empty input (pressing Enter without typing a number):
 		if numQuestions == 0 {
-			numQuestions = 10 // Set default if no input
-			break
-		}
-		if numQuestions < 1 || numQuestions > len(countryCapitals) {
-			fmt.Printf("Invalid input. Please enter a number between 1 and %d (or press Enter for default 10).\n", len(countryCapitals))
-		} else if numQuestions == 0 {
-			numQuestions = 10 // Set default if no input
+			numQuestions = 10 // Set default value
+			break             // Exit the loop immediately to proceed with the quiz
 		} else if numQuestions < 1 || numQuestions > len(countryCapitals) {
-			fmt.Printf("Invalid input. Please enter a number between 1 and %d (or press Enter for default 10).\n", len(countryCapitals))
+			// Handle invalid input (non-numeric or out-of-range):
+			fmt.Printf("Invalid input. Please enter a number between 1 and %d.\n", len(countryCapitals))
 		} else {
-			break // Input is valid, proceed with the quiz
+			// Handle valid input:
+			break // Exit the loop to proceed with the quiz
 		}
 	}
 
