@@ -1,6 +1,4 @@
-I'd be glad to create a markdown project description for you:
-
-**Go-CLI** (Replace with your project's name)
+# Go-CLI 
 
 ## Overview
 
@@ -32,7 +30,8 @@ This project provides a command-line interface (CLI) application with various fu
 
 2. **Navigate to Project Directory:** Use the `cd` command to enter the project directory:
 
-   ```bashGo-CLIyour-project-repository
+   ```bash
+   cd Go-CLI
    ```
 
 3. **Build the Application:** Run the following command in the terminal:
@@ -46,7 +45,7 @@ This project provides a command-line interface (CLI) application with various fu
 
 **Using Pre-Built Binaries:**
 
-If you don't want to build from source, you can download pre-built binaries for your operating system from the project's [Releases](https://github.com/OleksiyM/Go-CLI/releases) section . Once downloaded, make the binary executable (if necessary) and place it in a directory accessible from your system's PATH environment variable.
+If you don't want to build from source, you can download pre-built binaries for your operating system from the project's [Releases](https://github.com/OleksiyM/Go-CLI/releases) section. Once downloaded, make the binary executable (if necessary) and place it in a directory accessible from your system's PATH environment variable.
 
 ## Usage
 
